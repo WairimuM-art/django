@@ -1,0 +1,66 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+
+{#preloader#}
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+{#header#}
+<header class="header section" style="background-color: purple">
+    <div class="container-fluid">
+
+{#        logo#}
+{#        <div class="site logo mb-4" style="display: flex">#}
+{#            <img src="{% static 'images/Beige Brown Simple Initial Logo.jpg' %}" alt="logo" width="50px">#}
+{#            <h2 class="pl-3" style="color: black; margin-right: 2px; font-family: 'Harlow-Solid-Italic',serif; font-weight: 900">Style Horizon</h2>#}
+{#        </div>#}
+        <div>
+               <ul class="main-menu text-black">
+                   <li><a class="text-black" href="">Home</a></li>
+                   <li><a class="text-black" href="">Women clothes</a></li>
+                   <li><a class="text-black" href="">Men clothes</a></li>
+                   <li><a class="text-black" href="">Shoes</a></li>
+                   <li><a class="text-black" href="">Purses</a></li>
+               </ul>
+        </div>
+
+
+    </div>
+</header>
+
+<section id="carouselExampleAutoplaying" class="carousel hero section mt-5 w-100">
+    <div class="slide container mt-2 py-3 w-100" data-bs-ride="carousel">
+        <div class="w-100 mt-5 carousel-inner">
+            <div class="carousel-item active">
+				  <img src="{% static 'images/c1.webp' %}" class="d-block w-100%" alt="...">
+            </div>
+
+            <div class="carousel-item active">
+				  <img src="" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item active">
+				  <img src="" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{#carousel section#}
+<div id="carousel">
+    <div class="loader"></div>
+</div>
+
+</body>
+</html>
