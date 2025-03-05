@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services</title>
+</head>
+<body>
+<a href="{% url 'home' %}">Home</a>
+<a href="{% url 'about_us' %}">About Us</a>
+<a href="{% url 'contact' %}"> Contact</a>
+<a href="{% url 'gallery' %}"> Gallery</a>
+<a href="{% url 'services' %}"> Services</a>
+<h1>Our Services</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aliquam asperiores assumenda
+    commodi cumque cupiditate dicta dolores explicabo hic laborum, nisi nobis porro quaerat quidem,
+    vitae. Cumque exercitationem nisi quibusdam!</span><span>Atque consequuntur eaque quam quos reiciendis
+    repellendus, unde? Accusamus aspernatur dolore dolores ducimus et illo incidunt itaque laborum maxime,
+    minima nesciunt nihil quae quaerat quo sunt ullam voluptatibus. Aperiam, placeat?</span></p>
+<img src="{% static 'images/s1.jpeg'%}" alt="">
+</body>
+</html>
