@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online</title>
+</head>
+<body>
+{#<a href="/">Index</a>#}
+{#<a href="/login/">Login</a>#}
+<a href={% url 'add' %}>Add Students</a>
+<h2>This is my home page</h2>
+<table>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        <td>Date of Birth</td>
+    </tr>
+    {% for stu in users %}
+        <tr>
+        <td>{{ stu.firstname }}</td>
+        <td>{{ stu.lastname }}</td>
+        <td>{{ stu.email }}</td>
+        <td>{{ stu.DOB }}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign_up</title>
+</head>
+<body>
+{#<a href="/">Index</a>#}
+{#<a href="/login/">Login</a>#}
+<h2>Sign-up</h2>
+
+        <div class="container">
+            <div class="form-container">
+                <form action="">
+        {#            login#}
+{#                    {% for log in users %}#}
+{#                        {{ log.FirstName }}#}
+                        <div class="input-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+{#                        {{ log.LastName }}#}
+                        <div class="input-group">
+                            <label for="last_name"> Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+{#                        {{ log.Email }}#}
+                        <div class="input -group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <br>
+{#                        {{ log.Password }}#}
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+{#                        {{ log.Confirm_password }}#}
+                        <div class="input-group">
+                            <label for="confirm_pass">Confirm Password</label>
+                            <input type="password" id="confirm_pass" name="confirm_pass" required>
+                        </div>
+{#                    {% endfor %}#}
+                    <button class="button" type="button">Login</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
